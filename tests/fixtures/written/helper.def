@@ -1,0 +1,3 @@
+LIBRARY helper.dll
+EXPORTS
+    helper_by_ordinal @5 NONAME

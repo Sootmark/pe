@@ -1,0 +1,7 @@
+LIBRARY sample.dll
+EXPORTS
+    sample_add @1
+    sample_version @2
+    sample_greet @3
+    sample_hidden @7 NONAME
+    sample_ticks = KERNEL32.GetTickCount @9

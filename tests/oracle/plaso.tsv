@@ -1,0 +1,8 @@
+sample.dll	pe_coff:file	Content Modification Time	1600000000	Dynamic Link Library (DLL)	e513cd1e87ceebea4506ad53f6453df1	.text\0\0\0|.data\0\0\0|.rdata\0\0|.buildid|.pdata\0\0|.xdata\0\0|.bss\0\0\0\0|.edata\0\0|.idata\0\0|.rsrc\0\0\0|.reloc\0\0	sample.dll
+sample.dll	pe_coff:file	Content Modification Time	1700000000	Dynamic Link Library (DLL)	e513cd1e87ceebea4506ad53f6453df1	.text\0\0\0|.data\0\0\0|.rdata\0\0|.buildid|.pdata\0\0|.xdata\0\0|.bss\0\0\0\0|.edata\0\0|.idata\0\0|.rsrc\0\0\0|.reloc\0\0	sample.dll
+sample.dll	pe_coff:file	Creation Time	1700000000	Dynamic Link Library (DLL)	e513cd1e87ceebea4506ad53f6453df1	.text\0\0\0|.data\0\0\0|.rdata\0\0|.buildid|.pdata\0\0|.xdata\0\0|.bss\0\0\0\0|.edata\0\0|.idata\0\0|.rsrc\0\0\0|.reloc\0\0	sample.dll
+test_driver.sys	pe_coff:file	Creation Time	1429628034	Driver (SYS)	d9c9c4541168665f44917e3ddc4a00d5	.text\0\0\0	
+test_pe.exe	pe_coff:dll_import	Content Modification Time	1429628034	USER32.dll	true
+test_pe.exe	pe_coff:dll_import	Content Modification Time	1429628035	KERNEL32.dll	false
+test_pe.exe	pe_coff:file	Creation Time	1429628036	Executable (EXE)	8d0739063fc8f9955cc6696b462544ab	.text\0\0\0|.rdata\0\0|.data\0\0\0	
+wrc-test-wevt_template.dll	pe_coff:file	Creation Time	1641200107	Dynamic Link Library (DLL)	1913ea9cbfeed7fd2a2ef823b6656f85	.text\0\0\0|.rdata\0\0|.data\0\0\0|.rsrc\0\0\0|.reloc\0\0	

@@ -1,0 +1,12 @@
+sample.dll was written for these tests (MIT or Apache-2.0, like this crate),
+to cover what plaso's test files lack: a PE32+ image with named,
+ordinal-only and forwarded exports, an import by ordinal, a delay-loaded
+import, a version resource, a named resource, resource directory time
+stamps, a load configuration table and a CodeView (RSDS) record. It was
+built from sample.c, sample.def, sample.rc, helper.def and user32.def by
+build.sh with mingw-w64 on Debian 13 (gcc-mingw-w64-x86-64,
+binutils-mingw-w64-x86-64, GNU ld 2.44); finish.py (Python standard library)
+then sets what GNU ld leaves out: the delay import and load configuration
+data directories, the resource directory time stamps and the checksum.
+SHA-256:
+9f6c535c45c381e9522e5c99825defabdef50699a46248cb5773c41f3c9b8155  sample.dll

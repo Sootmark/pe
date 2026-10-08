@@ -1,0 +1,107 @@
+sample.dll	codeview	RSDS	c5220166-6492-eaab-f559-e755a56a38c7	1	sample
+sample.dll	debug	0	2	0	31	16412	4124
+sample.dll	export	1	sample_add	4096	
+sample.dll	export	2	sample_version	4100	
+sample.dll	export	3	sample_greet	4133	
+sample.dll	export	7		4127	
+sample.dll	export	9	sample_ticks	32903	KERNEL32.GetTickCount
+sample.dll	exports	sample.dll	1700000000	1
+sample.dll	header	34404	1700000000	8750	523	2.44	4174	14782103552	3	4.0	5.2	49152	36777	352	16
+sample.dll	imphash	e513cd1e87ceebea4506ad53f6453df1
+sample.dll	import	KERNEL32.dll	false	0	0	FreeLibrary@454
+sample.dll	import	KERNEL32.dll	false	0	1	GetCurrentProcessId@565
+sample.dll	import	KERNEL32.dll	false	0	2	GetLastError@643
+sample.dll	import	KERNEL32.dll	false	0	3	GetProcAddress@725
+sample.dll	import	KERNEL32.dll	false	0	4	LoadLibraryA@1011
+sample.dll	import	KERNEL32.dll	false	0	5	LocalAlloc@1020
+sample.dll	import	KERNEL32.dll	false	0	6	LocalFree@1025
+sample.dll	import	KERNEL32.dll	false	0	7	RaiseException@1179
+sample.dll	import	USER32.dll	true	0	0	MessageBoxA@0
+sample.dll	import	helper.dll	false	0	0	#5
+sample.dll	load-config	1600000000
+sample.dll	resource	10	GREETING	1033	41144	6	0
+sample.dll	resource	16	1	1033	41152	740	0
+sample.dll	resource-root	1550000000
+sample.dll	resource-type	10	1650000000
+sample.dll	resource-type	16	1650000001
+sample.dll	section	0	.text\0\0\0	4096	2016	1024	2048	1610612832
+sample.dll	section	1	.data\0\0\0	8192	16	3072	512	3221225536
+sample.dll	section	10	.reloc\0\0	45056	28	7680	512	1107296320
+sample.dll	section	2	.rdata\0\0	12288	368	3584	512	1073741888
+sample.dll	section	3	.buildid	16384	59	4096	512	1073741888
+sample.dll	section	4	.pdata\0\0	20480	108	4608	512	1073741888
+sample.dll	section	5	.xdata\0\0	24576	84	5120	512	1073741888
+sample.dll	section	6	.bss\0\0\0\0	28672	48	0	0	3221225600
+sample.dll	section	7	.edata\0\0	32768	199	5632	512	1073741888
+sample.dll	section	8	.idata\0\0	36864	508	6144	512	1073741888
+sample.dll	section	9	.rsrc\0\0\0	40960	936	6656	1024	1073741888
+sample.dll	version-fixed	1.2.3.4	1.2.0.0	63	0	262148	2	0
+sample.dll	version-string	040904b0	CompanyName	Sootmark test samples
+sample.dll	version-string	040904b0	FileDescription	A sample DLL for PE tests
+sample.dll	version-string	040904b0	FileVersion	1.2.3.4
+sample.dll	version-string	040904b0	InternalName	sample
+sample.dll	version-string	040904b0	LegalCopyright	No rights reserved
+sample.dll	version-string	040904b0	OriginalFilename	sample.dll
+sample.dll	version-string	040904b0	ProductName	Sootmark PE samples
+sample.dll	version-string	040904b0	ProductVersion	1.2
+sample.dll	version-var	Translation	0x0409 0x04b0
+test_driver.sys	header	332	1429628034	258	267	0.0	512	65536	1	4.0	4.0	1024	53371	0	16
+test_driver.sys	imphash	d9c9c4541168665f44917e3ddc4a00d5
+test_driver.sys	import	ntoskrnl.exe	false	0	0	DbgPrint@0
+test_driver.sys	section	0	.text\0\0\0	512	512	512	512	3758096608
+test_pe.exe	header	332	1429628036	271	267	7.10	4096	4194304	2	4.0	4.0	16384	0	1024	16
+test_pe.exe	imphash	8d0739063fc8f9955cc6696b462544ab
+test_pe.exe	import	KERNEL32.dll	false	1429628035	0	ExitProcess@175
+test_pe.exe	import	KERNEL32.dll	false	1429628035	1	LocalAlloc@590
+test_pe.exe	import	KERNEL32.dll	false	1429628035	2	GetProcAddress@408
+test_pe.exe	import	KERNEL32.dll	false	1429628035	3	FreeLibrary@239
+test_pe.exe	import	KERNEL32.dll	false	1429628035	4	InterlockedExchange@543
+test_pe.exe	import	KERNEL32.dll	false	1429628035	5	GetLastError@361
+test_pe.exe	import	KERNEL32.dll	false	1429628035	6	LoadLibraryA@584
+test_pe.exe	import	KERNEL32.dll	false	1429628035	7	RaiseException@667
+test_pe.exe	import	USER32.dll	true	1429628034	0	MessageBoxA@0
+test_pe.exe	section	0	.text\0\0\0	4096	635	1024	1024	1610612768
+test_pe.exe	section	1	.rdata\0\0	8192	418	2048	512	1073741888
+test_pe.exe	section	2	.data\0\0\0	12288	24	2560	512	3221225536
+wrc-test-wevt_template.dll	codeview	RSDS	576371df-2e33-44e5-9ec5-1f655fad00a9	1	C:\Projects\wrc-specimens\Release\wrc-test.pdb
+wrc-test-wevt_template.dll	debug	0	2	1641200107	71	8628	5044
+wrc-test-wevt_template.dll	debug	1	12	1641200107	20	8700	5116
+wrc-test-wevt_template.dll	debug	2	13	1641200107	536	8720	5136
+wrc-test-wevt_template.dll	debug	3	14	1641200107	0	0	0
+wrc-test-wevt_template.dll	header	332	1641200107	8450	267	14.14	4901	268435456	2	6.0	6.0	24576	0	320	16
+wrc-test-wevt_template.dll	imphash	1913ea9cbfeed7fd2a2ef823b6656f85
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	0	GetCurrentThreadId@538
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	1	SetUnhandledExceptionFilter@1381
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	10	TerminateProcess@1412
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	2	GetCurrentProcess@533
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	3	IsDebuggerPresent@890
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	4	InitializeSListHead@862
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	5	GetSystemTimeAsFileTime@741
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	6	UnhandledExceptionFilter@1445
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	7	GetCurrentProcessId@534
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	8	QueryPerformanceCounter@1094
+wrc-test-wevt_template.dll	import	KERNEL32.dll	false	0	9	IsProcessorFeaturePresent@897
+wrc-test-wevt_template.dll	import	VCRUNTIME140.dll	false	0	0	__std_type_info_destroy_list@37
+wrc-test-wevt_template.dll	import	VCRUNTIME140.dll	false	0	1	memset@72
+wrc-test-wevt_template.dll	import	VCRUNTIME140.dll	false	0	2	_except_handler4_common@53
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	0	_cexit@23
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	1	_execute_onexit_table@36
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	2	_initialize_onexit_table@54
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	3	_configure_narrow_argv@25
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	4	_seh_filter_dll@65
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	5	_initterm_e@57
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	6	_initterm@56
+wrc-test-wevt_template.dll	import	api-ms-win-crt-runtime-l1-1-0.dll	false	0	7	_initialize_narrow_environment@53
+wrc-test-wevt_template.dll	load-config	0
+wrc-test-wevt_template.dll	resource	11	1	1033	16656	52	0
+wrc-test-wevt_template.dll	resource	24	2	1033	17256	381	0
+wrc-test-wevt_template.dll	resource	WEVT_TEMPLATE	1	1033	16712	538	0
+wrc-test-wevt_template.dll	resource-root	0
+wrc-test-wevt_template.dll	resource-type	11	0
+wrc-test-wevt_template.dll	resource-type	24	0
+wrc-test-wevt_template.dll	resource-type	WEVT_TEMPLATE	0
+wrc-test-wevt_template.dll	section	0	.text\0\0\0	4096	3126	1024	3584	1610612768
+wrc-test-wevt_template.dll	section	1	.rdata\0\0	8192	1948	4608	2048	1073741888
+wrc-test-wevt_template.dll	section	2	.data\0\0\0	12288	912	6656	512	3221225536
+wrc-test-wevt_template.dll	section	3	.rsrc\0\0\0	16384	1256	7168	1536	1073741888
+wrc-test-wevt_template.dll	section	4	.reloc\0\0	20480	300	8704	512	1107296320

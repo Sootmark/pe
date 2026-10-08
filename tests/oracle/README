@@ -1,0 +1,30 @@
+plaso.tsv: what plaso (the log2timeline/plaso:20260720 Docker image) reads
+from tests/fixtures/plaso/ and tests/fixtures/written/sample.dll with its pe
+parser (psort -o json_line), one line per event: file name, data type,
+timestamp description, time (seconds), then for pe_coff:file the PE type,
+import hash, raw section names and export DLL name, for pe_coff:dll_import
+the DLL name and delay flag. Written from plaso's output, not from this
+crate.
+
+    # on a Linux host with Docker
+    mkdir -p /tmp/smo/pe/in /tmp/smo/pe-written/in
+    cp tests/fixtures/plaso/test_pe.exe tests/fixtures/plaso/test_driver.sys \
+        tests/fixtures/plaso/wrc-test-wevt_template.dll /tmp/smo/pe/in/
+    cp tests/fixtures/written/sample.dll /tmp/smo/pe-written/in/
+    for set in pe pe-written; do
+        sudo docker run --rm -v /tmp/smo/$set:/data log2timeline/plaso:20260720 log2timeline --status_view none -q --parsers 'pe' --storage-file /data/out.plaso /data/in
+        sudo docker run --rm -v /tmp/smo/$set:/data log2timeline/plaso:20260720 psort --status_view none -q -o json_line -w /data/out.jsonl /data/out.plaso
+    done
+    python3 -I tests/oracle/plaso_tsv.py /tmp/smo/pe/out.jsonl /tmp/smo/pe-written/out.jsonl > tests/oracle/plaso.tsv
+
+pefile.tsv: what pefile 2024.8.26 (an independent Python reader) reads from
+the same four files: headers, sections, imports, exports, debug directory,
+CodeView records, resources, version information, load configuration time
+stamp, import hash (see pefile_tsv.py). Written from pefile's output, not
+from this crate.
+
+    pip install --user pefile==2024.8.26
+    python3 -P tests/oracle/pefile_tsv.py tests/fixtures/plaso/test_pe.exe \
+        tests/fixtures/plaso/test_driver.sys \
+        tests/fixtures/plaso/wrc-test-wevt_template.dll \
+        tests/fixtures/written/sample.dll > tests/oracle/pefile.tsv

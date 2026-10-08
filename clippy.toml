@@ -1,0 +1,2 @@
+# Format, structure and tool names: prose, not code.
+doc-valid-idents = ["..", "CodeView", "PE32", "PE32+", "StringFileInfo", "VarFileInfo", "MinGW", "VirusTotal"]
